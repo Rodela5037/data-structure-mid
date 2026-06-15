@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char str[200], ins[100];
+    int pos;
+    scanf("%s", str);
+    scanf("%s", ins);
+    scanf("%d", &pos);
+    printf("%.*s%s%s", pos, str, ins, str + pos);
+    return 0;
+}
