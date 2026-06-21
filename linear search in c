@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+int a[10];
+int found=0;
+int i,n,data_find;
+scanf("%d",&n);
+for(i=0;i<n;i++){
+    scanf("%d",&a[i]);
+}
+scanf("%d",&data_find);
+for(i=0;i<n;i++){
+    if(a[i]==data_find){
+        printf("found at position %d",i+1);
+        found++;
+        break;
+    }
+}
+ if(found){
+    printf("\ndata found");
+ }
+ else{
+        printf("\ndata not found");
+    }
+  return 0;
+}
